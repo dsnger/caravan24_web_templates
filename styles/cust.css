@@ -219,3 +219,11 @@ button.baguetteBox-button:active  {
 .col-form-label {
   font-weight: 600;
 }
+
+
+.c24-btn-verkaeufer-werden {
+  border-width: 2px;
+  border-color: #3b7859;
+  color: #3b7859;
+
+}

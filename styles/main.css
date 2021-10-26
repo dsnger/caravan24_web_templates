@@ -5509,7 +5509,8 @@ input[type='submit'].btn-block {
 }
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1.25rem 1rem;
+  
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -5708,8 +5709,8 @@ input[type='submit'].btn-block {
     position: absolute;
   }
   .navbar-expand-xs .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-expand-xs > .container,
   .navbar-expand-xs > .container-fluid {
@@ -5754,8 +5755,8 @@ input[type='submit'].btn-block {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -5938,8 +5939,8 @@ input[type='submit'].btn-block {
     position: absolute;
   }
   .navbar-expand-xxl .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-expand-xxl > .container,
   .navbar-expand-xxl > .container-fluid {
@@ -6007,7 +6008,7 @@ input[type='submit'].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
@@ -13218,7 +13219,7 @@ body {
   position: relative;
   min-height: 100%;
   color: #212121;
-  font-family: 'Hind', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13233,8 +13234,9 @@ h4,
 h5,
 h6,
 h7 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Cabin', sans-serif;
   line-height: 1.35;
+  font-weight: 700;
 }
 @media (max-width: 766.98px) {
   h1 {
@@ -13469,7 +13471,7 @@ label.btn {
   }
   .navbar .btn {
     font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.24rem 0.6rem;
   }
 }
 @media (min-width: 1280px) {
@@ -13509,6 +13511,10 @@ label.btn {
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.125rem;
 }
 .navbar .nav-item:hover {
   background-color: rgba(221, 221, 221, 0.2);
@@ -13520,7 +13526,7 @@ label.btn {
   .navbar .nav-item.active,
   .navbar .nav-item:hover {
     background-color: transparent;
-    border-bottom: 4px solid #f8a913;
+    
   }
   .navbar .nav-item.active .nav-link,
   .navbar .nav-item:hover .nav-link {
