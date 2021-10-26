@@ -67,10 +67,16 @@ section.page-details-infobox .detail-page-infobox h3 {
   top: 290px !important;
 }
 
-.c24-intro {
+.c24-intro-text {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.c24-lead-text {
   display: block;
   font-size: 1.125rem;
 }
+
 .c24-intro h1 {
   font-weight: bold;
   font-size: 2rem;
@@ -85,8 +91,6 @@ section.page-details-infobox .detail-page-infobox h3 {
 
 .c24-services h3 {
   font-weight: bold;
-  text-transform: uppercase;
-  color: #6c757d;
 }
 .c24-cta h4 {
   font-weight: bold;
@@ -226,4 +230,14 @@ button.baguetteBox-button:active  {
   border-color: #3b7859;
   color: #3b7859;
 
+}
+
+.c24-btn-verkaeufer-werden:hover,
+.c24-btn-verkaeufer-werden:active,
+.c24-btn-verkaeufer-werden:active:focus {
+  color: white;
+  background-color: #3b7859;
+  border-color: #3b7859;
+  outline: none;
+  box-shadow: none;
 }
