@@ -35,7 +35,7 @@ section.page-details-infobox .detail-page-infobox h3 {
     margin-top: 0 !important;
   }
   .navbar-brand img {
-    min-width: 275px;
+    min-width: 240px;
   }
   body > header.sticky,
   body > header.sticky-fix {
@@ -54,7 +54,7 @@ section.page-details-infobox .detail-page-infobox h3 {
   }
   body > header.sticky-fix .navbar-brand,
   body > header.sticky .navbar-brand {
-    max-width: 275px !important;
+    max-width: 240px !important;
   }
 }
 @media (max-width: 991px) {
@@ -180,36 +180,61 @@ button.baguetteBox-button:active  {
 
 .c24-btn-verkaeufer-werden {
   border-width: 2px;
-  border-color: #3b7859;
-  color: #3b7859;
-
+  border-color: #f8a913;
+  color: #f8a913;
 }
 
 .c24-btn-verkaeufer-werden:hover,
 .c24-btn-verkaeufer-werden:active,
 .c24-btn-verkaeufer-werden:active:focus {
   color: white;
-  background-color: #3b7859;
-  border-color: #3b7859;
+  background-color: #f8a913;
+  border-color: #f8a913;
   outline: none;
   box-shadow: none;
+}
+@media(min-width: 992px ){
+  .c24-btn-verkaeufer-werden {
+    border-width: 2px;
+    border-color: #3b7859 ;
+    color: #3b7859 ;
+  }
+  
+  .c24-btn-verkaeufer-werden:hover,
+  .c24-btn-verkaeufer-werden:active,
+  .c24-btn-verkaeufer-werden:active:focus {
+    color: white;
+    background-color: #3b7859;
+    border-color: #3b7859;
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 .hero-searchform__form .btn,
 .hero-searchform__form input.form-control  {
-  line-height: 2.25;
+  line-height: 2!important;
   border-radius: 6px;
   border-top-right-radius: 6px!important;
   border-bottom-right-radius: 6px!important;
   font-weight: 600;
-  height: 100%;
+  height: auto;
+}
+@media(min-width: 1024px){
+  .hero-searchform__form .btn,
+  .hero-searchform__form input.form-control  {
+    line-height: 2.125!important;
+  }
 }
 
 .hero-searchform__form .input-group-text {
-  line-height: 2.25;
+  line-height: 2.125!important;
   border-radius: 6px;
   font-weight: 600;
   height: 100%;
+}
+@media(min-width: 1024px){
+
 }
 
 .c24-modelle .card {
@@ -269,12 +294,19 @@ button.baguetteBox-button:active  {
 }
 
 .c24-modelle .card.card-large .content-label {
-  font-size: 2rem;
-  height: 92px
+  height: 64px;
 }
-.c24-modelle .card.card-large .content-title {
-  font-size: 2rem;
+@media(min-width: 1024px) {
+  .c24-modelle .card.card-large .content-label {
+    height: 92px;
+    font-size: 2rem;
+  }
+  .c24-modelle .card.card-large .content-title {
+    font-size: 2rem;
+  }
+  
 }
+
 
 .c24-modelle .card:hover .content-overlay {
   opacity: 1
