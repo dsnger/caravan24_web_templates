@@ -949,7 +949,7 @@ h4 {
 }
 .h5,
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 .h6,
 h6 {
@@ -8179,7 +8179,7 @@ button.bg-dark:hover {
   background-color: transparent !important;
 }
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 4px solid #dee2e6 !important;
 }
 .border-top {
   border-top: 1px solid #dee2e6 !important;

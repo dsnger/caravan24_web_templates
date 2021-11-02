@@ -214,7 +214,7 @@ button.baguetteBox-button:active  {
 
 .c24-modelle .card {
   position: relative;
-  width: 90%;
+  /* width: 90%; */
   margin: 0;
   overflow: hidden;
   background-color: #463635;
@@ -310,13 +310,14 @@ button.baguetteBox-button:active  {
   transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .c24-modelle .card:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
+  z-index: 10;
 }
 
 .c24-modelle h3 {
