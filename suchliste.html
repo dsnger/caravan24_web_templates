@@ -5,18 +5,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Vermieter werden - Caravan24 - Einfach und sicher Wohnmobile mieten &amp; vermieten!</title>
+  <title>Caravan24 - Einfach und sicher Wohnmobile mieten &amp; vermieten!</title>
   <meta name="description" content="DESCRIPTION">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/cust.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Hind:400,500,700&amp;display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,600&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link defer href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"
     rel="stylesheet">
   <script defer src="https://kit.fontawesome.com/93864702c8.js"></script>
   <!--if lt IE 9script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')-->
-  <script src="scripts/js/jquery-3.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+  <script src="scripts/js/jquery.js"></script>
 </head>
 
 <body class="suchliste-page">
@@ -69,7 +74,7 @@
         </div>
         <ul class="navbar-nav">
           <li class="nav-item d-flex">
-            <a class="btn btn-sm btn-outline-primary c24-btn-verkaeufer-werden mb-2 mt-3 my-md-2 " type="link" href="#">Händler Login</a>
+            <a class="btn btn-sm btn-outline-primary c24-btn-verkaeufer-werden mb-2 mt-3 my-md-2 mr-md-3 " type="link" href="#">Händler Login</a>
           </li>
           <li class="nav-item d-flex dropdown">
             <a class="nav-link dropdown-toggle py-4" href="#" id="dropdownLang" role="button" data-toggle="dropdown"
@@ -86,87 +91,87 @@
     </nav>
   </header>
   <!--Suchformular-->
- <!--Suchformular-->
- <section class="hero">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs">
-        <div class="hero__image-box position-relative"><img class="hero__image img-fluid"
-            src="assets/img/AdobeStock_317029051_Preview-heroimage.jpg">
-          <section class="hero-searchform">
-            <div class="container-fluid wrapper">
-              <div class="row">
-                <div class="col">
-                  <form class="hero-searchform__form form-inline suche" action="/">
-                    <div class="form-row">
+  <section class="hero">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs">
+          <div class="hero__image-box position-relative">
+            <!-- <img class="hero__image img-fluid"
+              src="assets/img/AdobeStock_317029051_Preview-heroimage.jpg"> -->
+            <section class="hero-searchform">
+              <div class="container-fluid wrapper">
+                <div class="row">
+                  <div class="col">
+                    <form class="hero-searchform__form form-inline suche" action="/">
+                      <div class="form-row">
 
-                      <div class="col input-group hero-searchform__vehicle">
-                        <div class="btn-group-toggle" data-toggle="buttons">
+                        <div class="col input-group hero-searchform__vehicle">
+                          <div class="btn-group-toggle" data-toggle="buttons">
 
-                          <label class="btn btn-default btn-c24icon-sm mr-2 active">
-                            <input type="radio" name="vehicleType" value="1" checked="checked"><i
-                              class="c24icon c24icon-alkoven" data-toggle-search="tooltip" data-placement="bottom"
-                              title="" data-original-title="Wohnmobil"></i>
-                          </label>
+                            <label class="btn btn-default btn-c24icon-sm mr-2 active">
+                              <input type="radio" name="vehicleType" value="1" checked="checked"><i
+                                class="c24icon c24icon-alkoven" data-toggle-search="tooltip" data-placement="bottom"
+                                title="" data-original-title="Wohnmobil"></i>
+                            </label>
 
-                          <label class="btn btn-default btn-c24icon-sm">
-                            <input type="radio" name="vehicleType" value="2" autocomplete="off"><i
-                              class="c24icon c24icon-wohnwagen" data-toggle-search="tooltip" data-placement="bottom"
-                              title="" data-original-title="Wohnwagen"></i>
-                          </label>
+                            <label class="btn btn-default btn-c24icon-sm">
+                              <input type="radio" name="vehicleType" value="2" autocomplete="off"><i
+                                class="c24icon c24icon-wohnwagen" data-toggle-search="tooltip" data-placement="bottom"
+                                title="" data-original-title="Wohnwagen"></i>
+                            </label>
 
+                          </div>
+                        </div>
+
+                        <div class="col input-group hero-searchform__where">
+                          <div class="input-group-prepend"><span class="input-group-text">
+                              <i class="fas fa-map-marker-alt" aria-hidden="true"></i></span></div>
+                          <input class="form-control flex-4 ac_input c24-input-wo" name="loc" id="autocomplete"
+                            type="text" placeholder="Wo?" aria-label="Wo" autocomplete="off"><input name="loc2"
+                            id="autocomplete2" type="hidden">
+                        </div>
+
+                        <div class="col input-group hero-searchform__daterange">
+                          <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-calendar-alt"
+                                aria-hidden="true"></i></span></div>
+                          <input class="form-control" id="inputStartdate" name="daterange"
+                            value="22.05.2021 - 29.05.2021" type="text" placeholder="Abholung" aria-label="Abholung"
+                            readonly="readonly">
+                        </div>
+
+                        <div class="col input-group hero-searchform__submit">
+                          <button class="btn btn-primary" type="submit">Suchen</button>
+                        </div>
+
+                      </div>
+
+                      <div class="daterangepicker ltr show-calendar opensleft">
+                        <div class="ranges"></div>
+                        <div class="drp-calendar left">
+                          <div class="calendar-table"></div>
+                          <div class="calendar-time" style="display: none;"></div>
+                        </div>
+                        <div class="drp-calendar right">
+                          <div class="calendar-table"></div>
+                          <div class="calendar-time" style="display: none;"></div>
+                        </div>
+                        <div class="drp-buttons"><span class="drp-selected">22.05.2021 - 29.05.2021</span><button
+                            class="cancelBtn btn btn-sm btn-default" type="button">abbrechen</button><button
+                            class="applyBtn btn btn-sm btn-secondary" disabled="disabled"
+                            type="button">best�tigen</button>
                         </div>
                       </div>
-
-                      <div class="col input-group hero-searchform__where">
-                        <div class="input-group-prepend"><span class="input-group-text">
-                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i></span></div>
-                        <input class="form-control flex-4 ac_input c24-input-wo" name="loc" id="autocomplete"
-                          type="text" placeholder="Wo?" aria-label="Wo" autocomplete="off"><input name="loc2"
-                          id="autocomplete2" type="hidden">
-                      </div>
-
-                      <div class="col input-group hero-searchform__daterange">
-                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-calendar-alt"
-                              aria-hidden="true"></i></span></div>
-                        <input class="form-control" id="inputStartdate" name="daterange"
-                          value="22.05.2021 - 29.05.2021" type="text" placeholder="Abholung" aria-label="Abholung"
-                          readonly="readonly">
-                      </div>
-
-                      <div class="col input-group hero-searchform__submit">
-                        <button class="btn btn-primary" type="submit">Suchen</button>
-                      </div>
-
-                    </div>
-
-                    <div class="daterangepicker ltr show-calendar opensleft">
-                      <div class="ranges"></div>
-                      <div class="drp-calendar left">
-                        <div class="calendar-table"></div>
-                        <div class="calendar-time" style="display: none;"></div>
-                      </div>
-                      <div class="drp-calendar right">
-                        <div class="calendar-table"></div>
-                        <div class="calendar-time" style="display: none;"></div>
-                      </div>
-                      <div class="drp-buttons"><span class="drp-selected">22.05.2021 - 29.05.2021</span><button
-                          class="cancelBtn btn btn-sm btn-default" type="button">abbrechen</button><button
-                          class="applyBtn btn btn-sm btn-secondary" disabled="disabled"
-                          type="button">best�tigen</button>
-                      </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--/Suchformular-->
+  </section>
+  <!--/Suchformular-->
   <main class="page-content mx-auto">
     <div class="container with-marginal">
       <div class="row">

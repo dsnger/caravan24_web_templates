@@ -5934,15 +5934,16 @@ input[type='submit'].btn-block {
 }
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-  color: white;
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: white;
+  color: rgba(0, 0, 0, 0.9);
 }
+
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -7542,7 +7543,7 @@ a.close.disabled {
 }
 @media (min-width: 1440px) {
   .modal-xl {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 .tooltip {
@@ -13456,6 +13457,11 @@ label.btn {
   width: 100%;
   justify-content: center;
 }
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:active {
+  color: #f8a913;
+}
 
 @media (min-width: 992px) {
   .navbar .nav-item .nav-link {
@@ -13463,17 +13469,14 @@ label.btn {
     display: flex;
     align-items: center;
     font-weight: 600;
+    padding: 1.25rem 1rem;
+    font-size: 1.125rem;
   }
   .navbar .nav-item.active,
   .navbar .nav-item:hover {
     background-color: transparent;
   }
  
-  .navbar .nav-item.active .nav-link,
-  .navbar .nav-item:hover .nav-link {
-    color: #f8a913;
-  
-  }
 } 
 
 /* .navbar .nav-item:hover {
@@ -14031,7 +14034,7 @@ section.page-details-infobox
 .page-searchform .container.wrapper {
   padding: .65rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 767px) {
 
   .hero-searchform .container-fluid.wrapper,
   .hero-searchform .container.wrapper,
@@ -14047,7 +14050,7 @@ section.page-details-infobox
     width: 100%;
     z-index: 10;
     top: auto;
-    bottom: 5rem;
+    bottom: 2rem;
   }
   .hero-searchform .container,
   .hero-searchform .container-fluid,
@@ -14067,6 +14070,14 @@ section.page-details-infobox
   .page-searchform .container-fluid.wrapper,
   .page-searchform .container.wrapper {
     padding: 0.65rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-searchform,
+  .page-searchform {
+    top: auto;
+    bottom: 4rem;
   }
 }
 .search-fixed,
