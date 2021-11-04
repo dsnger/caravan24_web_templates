@@ -293,6 +293,7 @@ button.baguetteBox-button:active  {
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   z-index: 1;
+  border-radius: 6px;
 }
 
 .c24-modelle .card .content-label {
@@ -317,7 +318,7 @@ button.baguetteBox-button:active  {
   border-bottom-right-radius: 6px;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s;
 }
 
 @media(max-width: 1200px) {
@@ -429,6 +430,14 @@ button.baguetteBox-button:active  {
   display: block;
 }
 
+h2 > img {
+  width: 40px;
+}
+@media(min-width: 992px) {
+  h2 > img {
+    width: 60px;
+  }
+}
 
 .c24-modelle .card .card-ribbon {
   position: absolute;
@@ -442,6 +451,7 @@ button.baguetteBox-button:active  {
   align-items: center;
   justify-content: center;
   z-index: 2;
+  border-top-right-radius: 6px;
 }
 .c24-modelle .card .card-ribbon:before {
   position: absolute;

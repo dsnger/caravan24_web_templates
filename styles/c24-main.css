@@ -13659,9 +13659,9 @@ body > header.sticky .nav-brand {
   padding-right: 0;
 }
 
-.hero img {
+/* .hero img {
   display: none;
-}
+} */
 @media (min-width: 767px) {
   .hero img {
     display: block;
@@ -14032,7 +14032,7 @@ section.page-details-infobox
 .hero-searchform .container.wrapper,
 .page-searchform .container-fluid.wrapper,
 .page-searchform .container.wrapper {
-  padding: .65rem;
+  padding: .75rem;
 }
 @media (min-width: 767px) {
 
