@@ -1,52 +1,177 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Vermieter werden - Caravan24 - Einfach und sicher Wohnmobile mieten &amp; vermieten!</title>
-  <meta name="description" content="DESCRIPTION">
-  <link rel="stylesheet" href="styles/c24-main.css">
-  <link rel="stylesheet" href="styles/c24-cust.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Hind:400,500,700&amp;display=swap" rel="stylesheet">
-  <link defer href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"
-    rel="stylesheet">
-  <script defer src="https://kit.fontawesome.com/93864702c8.js"></script>
-  <!--if lt IE 9script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')-->
-  <script src="scripts/js/jquery-3.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Caravan24 - Vermieter werden</title>
+    <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="styles/c24-main.css">
+    <link rel="stylesheet" href="styles/c24-cust.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,600&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+  
+    <link defer href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"
+      rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/93864702c8.js"></script>
+    <!--if lt IE 9script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')-->
+    <script src="scripts/js/jquery.js"></script>
+  </head>
 
-<body class="suchliste-page">
+<body class="start-page">
 
-  <!-- page header-->
   <header class="page-header position-fixed sticky-fix sticky">
-    <div class="container">
-      <!-- navigationsleiste-->
-      <nav class="navbar navbar-expand-lg align-items-center my-1"><a class="navbar-brand text-hide"
-          href="index.html"><img class="navbar-brand__img d-inline-block align-top" src="assets/img/caravan24-logo.svg"
-            alt="Logo Caravan24"><span class="navbar-brand-name">Caravan24</span></a>
-        <h5 class="navbar-claim col ml-2">Wohnmobile mieten &amp; vermieten</h5>
-        <!--hamburger button-->
-        <!-- navigations menu-->
-        <button class="btn btn-sm btn-outline-primary ml-auto c24-btn-vermieter-werden" type="link"
-          onclick="window.location.href='https://www.caravan24.de/kontakt/anbieten.php'">Vermieter werden</button>
-      </nav>
-    </div>
+    <!-- navigationsleiste-->
+    <nav class="navbar navbar-expand-md navbar-light container py-3 py-sm-0">
+
+      <!-- logo -->
+      <a class="navbar-brand text-hide mr-md-5 d-flex align-items-center" href="index.html"><img
+          class="navbar-brand__img d-inline-block align-top" src="assets/img/caravan24-logo.svg"
+          alt="Logo Caravan24"><span class="navbar-brand-name">Caravan.de</span></a>
+
+      <!-- mobile menu -->
+      <a class="btn btn-sm c24-btn-verkaeufer-werden ml-auto mr-2 d-sm-none" type="link" href="#">Vermieter </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Suchen <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownVermieten" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Vermieten
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownVermieten">
+              <a class="dropdown-item" href="#">Vermieter</a>
+              <a class="dropdown-item" href="#">Privat</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownVerkaufen" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Verkaufen
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownVerkaufen">
+              <a class="dropdown-item" href="#">Vermieter</a>
+              <a class="dropdown-item" href="#">Privat</a>
+            </div>
+          </li>
+        </ul>
+        <div class="d-flex">
+
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item d-flex">
+            <a class="btn btn-sm btn-outline-primary c24-btn-verkaeufer-werden mb-2 mt-3 my-md-2 mr-md-3 " type="link" href="#">Vermieter Login</a>
+          </li>
+          <li class="nav-item d-flex dropdown">
+            <a class="nav-link dropdown-toggle py-4" href="#" id="dropdownLang" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="flag-icon flag-icon-de"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:60px" aria-labelledby="dropdownLang">
+              <a class="dropdown-item text-center" href="#"><span class="flag-icon flag-icon-gb"></span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- navigations menu-->
+    </nav>
   </header>
 
-  <section class="hero">
+   <!--Suchformular-->
+   <section class="hero">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs">
           <div class="hero__image-box position-relative"><img class="hero__image img-fluid"
-              src="assets/img/header_fotolia_132213676_M.jpg">
+              src="assets/img/AdobeStock_317029051_Preview-heroimage.jpg">
+            <section class="hero-searchform">
+              <div class="container-fluid wrapper">
+                <div class="row">
+                  <div class="col">
+                    <form class="hero-searchform__form form-inline suche" action="/">
+                      <div class="form-row">
+
+                        <div class="col input-group hero-searchform__vehicle">
+                          <div class="btn-group-toggle" data-toggle="buttons">
+
+                            <label class="btn btn-default btn-c24icon-sm mr-2 active">
+                              <input type="radio" name="vehicleType" value="1" checked="checked"><i
+                                class="c24icon c24icon-alkoven" data-toggle-search="tooltip" data-placement="bottom"
+                                title="" data-original-title="Wohnmobil"></i>
+                            </label>
+
+                            <label class="btn btn-default btn-c24icon-sm">
+                              <input type="radio" name="vehicleType" value="2" autocomplete="off"><i
+                                class="c24icon c24icon-wohnwagen" data-toggle-search="tooltip" data-placement="bottom"
+                                title="" data-original-title="Wohnwagen"></i>
+                            </label>
+
+                          </div>
+                        </div>
+
+                        <div class="col input-group hero-searchform__where">
+                          <div class="input-group-prepend"><span class="input-group-text">
+                              <i class="fas fa-map-marker-alt" aria-hidden="true"></i></span></div>
+                          <input class="form-control flex-4 ac_input c24-input-wo" name="loc" id="autocomplete"
+                            type="text" placeholder="Wo?" aria-label="Wo" autocomplete="off"><input name="loc2"
+                            id="autocomplete2" type="hidden">
+                        </div>
+
+                        <div class="col input-group hero-searchform__daterange">
+                          <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-calendar-alt"
+                                aria-hidden="true"></i></span></div>
+                          <input class="form-control" id="inputStartdate" name="daterange"
+                            value="22.05.2021 - 29.05.2021" type="text" placeholder="Abholung" aria-label="Abholung"
+                            readonly="readonly">
+                        </div>
+
+                        <div class="col input-group hero-searchform__submit">
+                          <button class="btn btn-primary" type="submit">Suchen</button>
+                        </div>
+
+                      </div>
+
+                      <div class="daterangepicker ltr show-calendar opensleft">
+                        <div class="ranges"></div>
+                        <div class="drp-calendar left">
+                          <div class="calendar-table"></div>
+                          <div class="calendar-time" style="display: none;"></div>
+                        </div>
+                        <div class="drp-calendar right">
+                          <div class="calendar-table"></div>
+                          <div class="calendar-time" style="display: none;"></div>
+                        </div>
+                        <div class="drp-buttons"><span class="drp-selected">22.05.2021 - 29.05.2021</span><button
+                            class="cancelBtn btn btn-sm btn-default" type="button">abbrechen</button><button
+                            class="applyBtn btn btn-sm btn-secondary" disabled="disabled"
+                            type="button">best�tigen</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!--/Suchformular-->
+
   <main class="page-content mx-auto">
     <div class="container">
       <div class="row">
@@ -298,13 +423,13 @@
     <section class="footer-content">
       <div class="container wrapper">
         <div class="row">
-          <div class="col-lg-3 mb-3">
+          <div class="col-md-6 col-lg-3 mb-4">
             <h3>Unternehmen</h3>
             <p><strong>caravan24.de</strong><br>Drubbel 3/Prinzipalmarkt<br>48143 Münster<br>www.caravan24.de</p>
             <p>T: 0251 2803 844<br>E-Mail: <a href="mailto:info@caravan24.de">info@caravan24.de</a>
             </p>
           </div>
-          <div class="col-lg mb-3">
+          <div class="col-md-6 col-lg mb-4">
             <h3>Caravan24 - Wohnmobile und Wohnwagen online mieten</h3>
             <p></p> Bei Caravan24 finden Sie online Wohnmobile oder Wohnwagen direkt
             in Ihrer näheren Umgebung. Sie erhalten alle Informationen und können
@@ -314,13 +439,14 @@
                   href="https://www.freevector.com/free-outstanding-caravan-vectors-25880">FreeVector.com</a></small>
             </p>
           </div>
-          <div class="col-lg mb-3">
+          <div class="col-md-6 col-lg mb-5">
             <h3>Payment</h3>
+
             <img src="assets/img/visa-caravan24.png" title="Visa">
             <img src="assets/img/mastercard-caravan24.png" title="Mastercard">
             <img src="assets/img/paypal-caravan24.png" title="PayPal">
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <h3>Navigation</h3>
             <ul class="list-group">
               <li><a href="https://www.caravan24.de/" title="Zur Startseite"> <small><i
@@ -345,9 +471,8 @@
     <section class="footer-legal">
       <div class="container-fluid p-1 bg-black text white">
         <ul class="list-inline font-weight-light">
-          <li class="mr-3"><a href="https://www.caravan24.de/">caravan24.de</a></li>
-          <li>
-            &copy 2021 by caravan24.de</li>
+          <li class="mr-1"><a href="https://www.caravan24.de/">caravan24.de</a></li>
+          <li>&copy 2021 caravan24.de</li>
         </ul>
       </div>
     </section>
@@ -386,14 +511,14 @@
       </defs>
     </svg>
   </footer>
-  <script src="scripts/js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+
+  
+  <script src="scripts/js/popper.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"> </script>
   <script src="scripts/js/vendor-dist.js"></script>
   <script src="scripts/js/app-dist.js"></script>
-
   <link rel="stylesheet" type="text/css" href="styles/jquery.css" media="screen">
-  <script type="text/javascript" src="scripts/js/jquery.js"></script>
-  <a href="#top" class="back-to-top" style="display: none;">Nach oben</a>
 
 </body>
 
