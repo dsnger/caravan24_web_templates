@@ -13641,8 +13641,14 @@ body > header.sticky .nav-brand {
 }
 .hero .hero__image-box{
   max-height: 768px;
-  overflow: hidden;
 }
+
+.hero__image-wrapper {
+  max-height: 768px !important;
+  display: block;
+}
+
+
 
 .hero > .container,
 .hero > .container-fluid {
